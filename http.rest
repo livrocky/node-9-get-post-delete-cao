@@ -1,1 +1,11 @@
-GET http://localhost:3000/api/users
+###
+GET http://localhost:3005/api/users
+
+###
+POST http://localhost:3005/api/users
+Content-Type: application/json
+
+{
+    "email": "Vardenis@pavardenis.lt",
+    "name": "Vardenis"
+}

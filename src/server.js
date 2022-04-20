@@ -7,6 +7,7 @@ const app = express();
 
 // Global MiddleWare
 app.use(morgan('dev'));
+app.use(express.json());
 
 app.get('/', (req, res) => res.json('OK'));
 
