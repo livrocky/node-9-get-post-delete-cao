@@ -9,3 +9,6 @@ Content-Type: application/json
     "email": "Vardenis@pavardenis.lt",
     "name": "Vardenis"
 }
+
+###
+DELETE http://localhost:3005/api/comments/62601fd6c286dabc6bcace2b

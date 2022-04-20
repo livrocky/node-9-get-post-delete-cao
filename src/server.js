@@ -1,5 +1,6 @@
 const express = require('express');
 const morgan = require('morgan');
+const commentsRoutes = require('./api/commentsRoutes');
 const userRoutes = require('./api/usersRoutes');
 const { PORT } = require('./config');
 
@@ -13,5 +14,6 @@ app.get('/', (req, res) => res.json('OK'));
 
 // Routes
 app.use('/api', userRoutes);
+app.use('/api', commentsRoutes);
 
 app.listen(PORT, () => console.log('server online, PORT', PORT));
